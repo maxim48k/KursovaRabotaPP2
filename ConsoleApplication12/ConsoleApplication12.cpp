@@ -7,15 +7,7 @@ using namespace std;
 
 int main()
 {
-    #pragma omp parallel
-    {
-        int x = omp_get_thread_num();
-
-        #pragma omp critical
-        {
-            cout << "threads: " << x << "\n";
-        }
-    }
+    cout << sizeof(int) << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

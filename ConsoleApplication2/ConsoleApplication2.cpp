@@ -27,9 +27,10 @@ void quickSort(vector<int32_t>& arr, int start, int end) {
     if (start < end) {
         int32_t pivot = partition(arr, start, end);
 
-        quickSort(arr, start, pivot - 1);
-        quickSort(arr, pivot + 1, end);
-    }
+        quickSort (arr, start, pivot - 1);
+        quickSort (arr, pivot + 1, end);
+
+        } 
 }
 
 int main()
